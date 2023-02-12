@@ -1,28 +1,28 @@
-.list {
+section {
   width: 100%;
   margin-top: 10px;
 
-  .listTitle {
+  .container_title {
     color: white;
+    margin-left: 50px;
     font-size: 20px;
     font-weight: 500;
-    margin-left: 50px;
   }
 
   .wrapper {
     position: relative;
 
     .sliderArrow {
-      width: 50px;
-      height: 100%;
       background-color: rgb(22, 22, 22, 0.5);
-      color: white;
       position: absolute;
-      z-index: 99;
       top: 0;
       bottom: 0;
+      width: 50px;
+      height: 100%;
       margin: auto;
+      color: white;
       cursor: pointer;
+      z-index: 99;
 
       &.left {
         left: 0;
@@ -34,10 +34,10 @@
     }
 
     .container {
-      margin-left: 50px;
       display: flex;
-      margin-top: 10px;
       width: max-content;
+      margin-left: 50px;
+      margin-top: 10px;
       transform: translateX(0);
       transition: all 1s ease;
     }

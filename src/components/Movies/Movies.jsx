@@ -1,10 +1,10 @@
 import { useState, useRef } from "react";
-import "./list.scss";
-import ListItem from "../listItem/ListItem";
+import "./movies.scss";
+import MovieDetail from "../MovieDetail/MovieDetail";
 import ArrowBackIosOutlinedIcon from "@mui/icons-material/ArrowBackIosOutlined";
 import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 
-function List() {
+function Movies() {
   const [slideNumber, setSlideNumber] = useState(0);
   const [isMoved, setIsMoved] = useState(false);
 
@@ -26,8 +26,8 @@ function List() {
   };
 
   return (
-    <div className="list">
-      <span className="listTitle">Continue to watch</span>
+    <section>
+      <span className="container_title">Continue to watch</span>
       <div className="wrapper">
         <ArrowBackIosOutlinedIcon
           className="sliderArrow left"
@@ -35,24 +35,24 @@ function List() {
           style={{ display: !isMoved && "none" }}
         />
         <div className="container" ref={listRef}>
-          <ListItem index={0} />
-          <ListItem index={1} />
-          <ListItem index={2} />
-          <ListItem index={3} />
-          <ListItem index={4} />
-          <ListItem index={5} />
-          <ListItem index={6} />
-          <ListItem index={7} />
-          <ListItem index={8} />
-          <ListItem index={9} />
+          <MovieDetail index={0} />
+          <MovieDetail index={1} />
+          <MovieDetail index={2} />
+          <MovieDetail index={3} />
+          <MovieDetail index={4} />
+          <MovieDetail index={5} />
+          <MovieDetail index={6} />
+          <MovieDetail index={7} />
+          <MovieDetail index={8} />
+          <MovieDetail index={9} />
         </div>
         <ArrowForwardIosOutlinedIcon
           className="sliderArrow right"
           onClick={() => handleClick("right")}
         />
       </div>
-    </div>
+    </section>
   );
 }
 
-export default List;
+export default Movies;
