@@ -13,12 +13,12 @@ function Navbar() {
   };
 
   return (
-    <div className={isScrolled ? "navbar scrolled" : "navbar"}>
-      <div className="container">
+    <header className={isScrolled ? "navbar scrolled" : "navbar"}>
+      <navbar>
         <div className="left">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
-            alt="Netflix"
+            alt="Netflix Logo"
           />
           <span>Home Page</span>
           <span>Series</span>
@@ -32,9 +32,9 @@ function Navbar() {
           <NotificationsIcon className="icon" />
           <img
             src="https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-            alt="Profile Picture"
+            alt="Profile"
           />
-          <div className="profile">
+          <div className="profile_box">
             <ArrowDropDownIcon className="icon" />
             <div className="options">
               <span>Settings</span>
@@ -42,8 +42,8 @@ function Navbar() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </navbar>
+    </header>
   );
 }
 

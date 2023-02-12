@@ -1,5 +1,5 @@
 import "./home.scss";
-import Navbar from "../../components/navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import FeaturedMovie from "../../components/FeaturedMovie/FeaturedMovie";
 import List from "../../components/list/List";
 
