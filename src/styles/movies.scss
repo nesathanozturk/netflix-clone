@@ -7,8 +7,8 @@ section {
   .container_title {
     color: $white;
     margin-left: 50px;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: bold;
   }
 
   .wrapper {
@@ -39,7 +39,7 @@ section {
       display: flex;
       width: max-content;
       margin-left: 50px;
-      margin-top: 10px;
+      margin-top: 20px;
       transform: translateX(0);
       transition: all 1s ease;
     }
