@@ -31,6 +31,10 @@ header {
       span {
         margin-right: 20px;
         cursor: pointer;
+
+        &:hover {
+          color: #ccc;
+        }
       }
     }
 
@@ -39,7 +43,7 @@ header {
       align-items: center;
 
       .icon {
-        margin: 0px 10px;
+        margin: 0px 20px;
         cursor: pointer;
       }
 

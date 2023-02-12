@@ -4,7 +4,7 @@ import logo from "../../assets/logo.png";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import profilePicture from "../../assets/profile-picture.jpg";
+import profilePicture from "../../assets/profile-picture.webp";
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,7 +27,7 @@ function Navbar() {
         </div>
         <div className="right">
           <SearchIcon className="icon" />
-          <span>Ebeveyn</span>
+          <span>Neşathan</span>
           <NotificationsIcon className="icon" />
           <img src={profilePicture} alt="Profile" />
           <div className="profile_box">
