@@ -1,10 +1,11 @@
 import { useState, useRef } from "react";
+import CategoryTitle from "../CategoryTitle/CategoryTitle";
 import "../../styles/movies.scss";
 import MovieDetail from "../MovieDetail/MovieDetail";
 import ArrowBackIosOutlinedIcon from "@mui/icons-material/ArrowBackIosOutlined";
 import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 
-function Movies() {
+function Movies({ title }) {
   const [slideNumber, setSlideNumber] = useState(0);
   const [isMoved, setIsMoved] = useState(false);
 
@@ -27,7 +28,7 @@ function Movies() {
 
   return (
     <section>
-      <span className="container_title">Continue to watch</span>
+      <CategoryTitle title={title} />
       <div className="wrapper">
         <ArrowBackIosOutlinedIcon
           className="sliderArrow left"

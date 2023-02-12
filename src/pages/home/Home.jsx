@@ -8,10 +8,13 @@ function Home() {
     <div className="home">
       <Navbar />
       <FeaturedMovie />
-      <Movies />
-      <Movies />
-      <Movies />
-      <Movies />
+      <Movies title="İzlemeye Devam Et" />
+      <Movies title="Favoriler" />
+      <Movies title="Aksiyon Dizileri" />
+      <Movies title="Gerilim Filmleri" />
+      <Movies title="Komedi Filmleri" />
+      <Movies title="En Çok İzlenenler" />
+      <Movies title="Belgeseller" />
     </div>
   );
 }
