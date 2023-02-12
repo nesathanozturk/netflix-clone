@@ -1,11 +1,11 @@
 import { useState } from "react";
-import "./listItem.scss";
+import "./movieDetail.scss";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import AddIcon from "@mui/icons-material/Add";
 import ThumbUpOffAltIcon from "@mui/icons-material/ThumbUpOffAlt";
 import ThumbDownOffAltIcon from "@mui/icons-material/ThumbDownOffAlt";
 
-function ListItem({ index }) {
+function MovieDetail({ index }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const trailer =
@@ -13,7 +13,7 @@ function ListItem({ index }) {
 
   return (
     <div
-      className="listItem"
+      className="movie_box"
       style={{ left: isHovered && index * 225 - 50 + index * 2.5 }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -25,19 +25,19 @@ function ListItem({ index }) {
       {isHovered && (
         <>
           <video src={trailer} autoPlay={true} loop></video>
-          <div className="itemInfo">
+          <div className="movie_info">
             <div className="icons">
               <PlayArrowIcon className="icon" />
               <AddIcon className="icon" />
               <ThumbUpOffAltIcon className="icon" />
               <ThumbDownOffAltIcon className="icon" />
             </div>
-            <div className="itemInfoTop">
+            <div className="movie_details">
               <span>1 hour 14 minutes</span>
               <span className="limit">+16</span>
               <span>1999</span>
             </div>
-            <div className="desc">
+            <div className="description">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
               nihil quod maxime pariatur reiciendis sed perspiciatis beatae rem
               et, quo earum porro itaque dolor tempore ad veritatis amet
@@ -51,4 +51,4 @@ function ListItem({ index }) {
   );
 }
 
-export default ListItem;
+export default MovieDetail;
