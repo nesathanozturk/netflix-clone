@@ -34,5 +34,48 @@
     img {
       height: 140px;
     }
+
+    .itemInfo {
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+
+      .icons {
+        display: flex;
+        margin-bottom: 10px;
+
+        .icon {
+          border: 2px solid white;
+          padding: 5px;
+          border-radius: 50%;
+          margin-right: 10px;
+          font-size: 16px;
+        }
+      }
+      .itemInfoTop {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 600px;
+        color: gray;
+
+        .limit {
+          border: 1px solid gray;
+          padding: 1px 3px;
+          margin: 0 10px;
+        }
+      }
+
+      .desc {
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+
+      .genre {
+        color: lightgray;
+        font-size: 14px;
+      }
+    }
   }
 }
