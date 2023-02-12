@@ -1,8 +1,10 @@
+@import "./_variables";
+
 .movie_box {
-  background-color: var(--main-color);
+  background-color: $bg-color;
   width: 225px;
   height: 120px;
-  color: white;
+  color: $white;
   margin-right: 5px;
   overflow: hidden;
   cursor: pointer;
@@ -48,12 +50,12 @@
           margin-right: 10px;
           padding: 5px;
           font-size: 16px;
-          border: 2px solid white;
+          border: 2px solid $white;
           border-radius: 50%;
         }
       }
       .movie_details {
-        color: gray;
+        color: $gray;
         display: flex;
         align-items: center;
         margin-bottom: 10px;
@@ -63,7 +65,7 @@
         .limit {
           margin: 0 10px;
           padding: 1px 3px;
-          border: 1px solid gray;
+          border: 1px solid $gray;
         }
       }
 
@@ -73,7 +75,7 @@
       }
 
       .genre {
-        color: lightgray;
+        color: $lightgray;
         font-size: 14px;
       }
     }

@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import "./movies.scss";
+import "../../styles/movies.scss";
 import MovieDetail from "../MovieDetail/MovieDetail";
 import ArrowBackIosOutlinedIcon from "@mui/icons-material/ArrowBackIosOutlined";
 import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";

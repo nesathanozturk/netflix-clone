@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./movieDetail.scss";
+import "../../styles/movieDetail.scss";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import AddIcon from "@mui/icons-material/Add";
 import ThumbUpOffAltIcon from "@mui/icons-material/ThumbUpOffAlt";

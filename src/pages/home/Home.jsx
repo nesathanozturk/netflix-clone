@@ -1,4 +1,4 @@
-import "./home.scss";
+import "../../styles/home.scss";
 import Navbar from "../../components/Navbar/Navbar";
 import FeaturedMovie from "../../components/FeaturedMovie/FeaturedMovie";
 import Movies from "../../components/Movies/Movies";
