@@ -1,7 +1,10 @@
 import "../../styles/login.scss";
+import useAuthContext from "../../hooks/use-auth-context";
 import logo from "../../assets/images/logo.png";
 
-function Login({ setIsLoggedIn }) {
+function Login() {
+  const { setIsLoggedIn } = useAuthContext();
+
   const handleSubmit = () => {
     setIsLoggedIn(true);
   };

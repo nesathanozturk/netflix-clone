@@ -1,13 +1,18 @@
-import { useState } from "react";
-import "./styles/_reset.scss";
-import Home from "./pages/Home/Home";
+import { Routes, Route } from "react-router-dom";
 import Login from "./pages/Login/Login";
 import User from "./pages/User/User";
+import Home from "./pages/Home/Home";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  return <User />;
+  return (
+    <>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<User />} />
+        <Route path="/home" element={<Home />} />
+      </Routes>
+    </>
+  );
 }
 
 export default App;
