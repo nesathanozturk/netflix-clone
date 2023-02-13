@@ -1,13 +1,13 @@
 @import "./_variables";
 
 .movie_box {
-  background-color: $bg-color;
   width: 225px;
   height: 120px;
-  color: $white;
+  background-color: var(--main-color);
   margin-right: 5px;
   overflow: hidden;
   cursor: pointer;
+  color: white;
 
   img {
     width: 100%;
@@ -18,20 +18,20 @@
   video {
     width: 100%;
     height: 140px;
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
-    object-fit: cover;
   }
 
   &:hover {
     width: 325px;
     height: 300px;
     position: absolute;
-    top: -150px;
-    border-radius: 5px;
+    top: -179px;
     -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
     box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+    border-radius: 5px;
 
     img {
       height: 140px;
@@ -47,36 +47,36 @@
         margin-bottom: 10px;
 
         .icon {
-          margin-right: 10px;
+          border: 2px solid white;
           padding: 5px;
-          font-size: 16px;
-          border: 2px solid $white;
           border-radius: 50%;
+          margin-right: 10px;
+          font-size: 16px;
         }
       }
       .movie_details {
-        color: $gray;
         display: flex;
         align-items: center;
         margin-bottom: 10px;
         font-size: 14px;
-        font-weight: 600px;
+        font-weight: 600;
+        color: gray;
 
         .limit {
-          margin: 0 10px;
+          border: 1px solid gray;
           padding: 1px 3px;
-          border: 1px solid $gray;
+          margin: 0 10px;
         }
       }
 
       .description {
-        margin-bottom: 10px;
         font-size: 13px;
+        margin-bottom: 10px;
       }
 
       .genre {
-        color: $lightgray;
         font-size: 14px;
+        color: lightgray;
       }
     }
   }

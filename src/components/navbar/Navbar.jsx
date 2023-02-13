@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../../styles/navbar.scss";
 import logo from "../../assets/logo.png";
 import SearchIcon from "@mui/icons-material/Search";
@@ -9,21 +9,38 @@ import profilePicture from "../../assets/profile-picture.webp";
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
-  window.onscroll = () => {
-    setIsScrolled(window.pageYOffset === 0 ? false : true);
-    return () => (window.onscroll = null);
-  };
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    });
+  }, []);
 
   return (
-    <header className={isScrolled ? "navbar scrolled" : "navbar"}>
+    <header className={`navbar ${isScrolled && "scrolled"}`}>
       <navbar>
         <div className="left">
           <img src={logo} alt="Netflix Logo" />
-          <span>Ana Sayfa</span>
-          <span>Diziler</span>
-          <span>Filmler</span>
-          <span>Yeni Çıkanlar</span>
-          <span>Listem</span>
+          <ul>
+            <li>
+              <a href="/">Ana Sayfa</a>
+            </li>
+            <li>
+              <a href="/diziler">Diziler</a>
+            </li>
+            <li>
+              <a href="/filmler">Filmler</a>
+            </li>
+            <li>
+              <a href="/yeni-cikanlar">Yeni Çıkanlar</a>
+            </li>
+            <li>
+              <a href="/listem">Listem</a>
+            </li>
+          </ul>
         </div>
         <div className="right">
           <SearchIcon className="icon" />

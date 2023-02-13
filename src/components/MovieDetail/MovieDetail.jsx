@@ -14,7 +14,7 @@ function MovieDetail({ index }) {
   return (
     <div
       className="movie_box"
-      style={{ left: isHovered && index * 225 - 50 + index * 2.5 }}
+      style={{ left: isHovered && index * 225 - 10 + index * 2.5 }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

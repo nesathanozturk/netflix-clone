@@ -20,7 +20,7 @@ function Movies({ title }) {
       listRef.current.style.transform = `translateX(${230 + distance}px)`;
     }
 
-    if (direction === "right" && slideNumber < 5) {
+    if (direction === "right" && slideNumber < 9) {
       setSlideNumber(slideNumber + 1);
       listRef.current.style.transform = `translateX(${-230 + distance}px)`;
     }
@@ -46,6 +46,12 @@ function Movies({ title }) {
           <MovieDetail index={7} />
           <MovieDetail index={8} />
           <MovieDetail index={9} />
+          <MovieDetail index={10} />
+          <MovieDetail index={11} />
+          <MovieDetail index={12} />
+          <MovieDetail index={13} />
+          <MovieDetail index={14} />
+          <MovieDetail index={15} />
         </div>
         <ArrowForwardIosOutlinedIcon
           className="sliderArrow right"
