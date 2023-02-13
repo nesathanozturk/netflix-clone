@@ -3,15 +3,15 @@ import React, { useState, createContext } from "react";
 const AuthContext = createContext();
 
 const Provider = ({ children }) => {
-  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const valueToShare = {
     isLoggedIn,
     setIsLoggedIn,
-    email,
-    setEmail,
+    username,
+    setUsername,
     password,
     setPassword,
   };

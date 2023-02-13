@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import useAuthContext from "../../hooks/use-auth-context";
 import "../../styles/navbar.scss";
 import logo from "../../assets/images/logo.png";
 import profilePicture from "../../assets//images/profile-picture.webp";
@@ -12,6 +13,8 @@ import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 
 function Navbar() {
+  const { username } = useAuthContext();
+
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -31,25 +34,25 @@ function Navbar() {
           <img src={logo} alt="Netflix Logo" />
           <ul>
             <li>
-              <a href="/">Ana Sayfa</a>
+              <a href="#">Ana Sayfa</a>
             </li>
             <li>
-              <a href="/diziler">Diziler</a>
+              <a href="#">Diziler</a>
             </li>
             <li>
-              <a href="/filmler">Filmler</a>
+              <a href="#">Filmler</a>
             </li>
             <li>
-              <a href="/yeni-cikanlar">Yeni Çıkanlar</a>
+              <a href="#">Yeni Çıkanlar</a>
             </li>
             <li>
-              <a href="/listem">Listem</a>
+              <a href="#">Listem</a>
             </li>
           </ul>
         </div>
         <div className="right">
           <SearchIcon className="icon" />
-          <span>Neşathan</span>
+          <span>{username}</span>
           <NotificationsIcon className="icon" />
           <img src={profilePicture} alt="Profile" />
           <div className="profile_box">
