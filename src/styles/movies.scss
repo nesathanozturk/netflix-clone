@@ -6,14 +6,15 @@ section {
 
   .container_title {
     color: $white;
-    margin-left: 50px;
-    font-size: 25px;
+    margin-left: 60px;
+    font-size: 1.4vw;
     font-weight: bold;
   }
 
   .wrapper {
     position: relative;
     display: flex;
+    margin-left: 40px;
 
     .sliderArrow {
       background-color: $slider-bg;
@@ -40,7 +41,7 @@ section {
       display: flex;
       gap: 10px;
       width: max-content;
-      margin-left: 50px;
+      margin-left: 20px;
       margin-top: 20px;
       transform: translateX(0);
       transition: all 1s ease;

@@ -37,11 +37,13 @@ header {
         gap: 15px;
 
         a {
-          color: $white;
+          color: $gray;
+          letter-spacing: 1px;
           cursor: pointer;
+          transition: color 0.2s ease-in-out;
 
           &:hover {
-            color: $gray;
+            color: $hover-gray;
           }
         }
       }
@@ -52,7 +54,7 @@ header {
       align-items: center;
 
       .icon {
-        margin: 0px 20px;
+        margin: 0px 10px;
         cursor: pointer;
       }
 
