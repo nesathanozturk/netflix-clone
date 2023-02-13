@@ -1,4 +1,4 @@
-import "./login.scss";
+import "../../styles/login.scss";
 import logo from "../../assets/images/logo.png";
 
 function Login({ setIsLoggedIn }) {
