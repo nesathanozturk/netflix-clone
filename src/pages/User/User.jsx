@@ -1,3 +1,4 @@
+import "../../styles/user.scss";
 import profilePicture from "../../assets/images/profile-picture.webp";
 
 function User() {
@@ -5,8 +6,9 @@ function User() {
     <div className="container">
       <div className="wrapper">
         <div className="user">
+          <h1>Kim izliyor?</h1>
           <img src={profilePicture} alt="Avatar" />
-          <span>Neşathan</span>
+          <h2>Neşathan</h2>
         </div>
       </div>
     </div>
