@@ -1,29 +1,46 @@
 import "./login.scss";
+import logo from "../../assets/images/logo.png";
 
-function Login() {
+function Login({ setIsLoggedIn }) {
+  const handleSubmit = () => {
+    setIsLoggedIn(true);
+  };
+
   return (
     <div className="login">
-      <div className="top">
+      <navbar>
         <div className="wrapper">
-          <img
-            className="logo"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
-            alt="Netflix Logo"
-          />
+          <img className="logo" src={logo} alt="Netflix Logo" />
         </div>
-      </div>
+      </navbar>
       <div className="container">
-        <form>
-          <h1>Sign In</h1>
-          <input type="email" placeholder="Email or phone number" />
-          <input type="password" placeholder="Password" />
-          <button className="loginButton">Sıgn In</button>
+        <form onSubmit={handleSubmit}>
+          <h1>Oturum Aç</h1>
+          <input
+            className="form-input"
+            type="email"
+            placeholder="E-posta veya telefon numarası"
+          />
+          <input className="form-input" type="password" placeholder="Parola" />
+          <button>Oturum Aç</button>
+          <div className="help">
+            <div className="check">
+              <input type="checkbox" />
+              <label>Beni hatırla</label>
+            </div>
+            <span>
+              <a href="https://www.netflix.com/tr/LoginHelp">
+                Yardım ister misiniz?
+              </a>
+            </span>
+          </div>
           <span>
-            New to Netflix? <b>Sign up now.</b>
+            Netflix'e katılmak ister misiniz?
+            <a href="https://www.netflix.com/tr/"> Şimdi kaydolun.</a>
           </span>
           <small>
-            This page is protected by Google reCAPTCHA to ensure you're not a
-            bot. <b>Learn more</b>.
+            Bu sayfa robot olmadığınızı kanıtlamak için Google reCAPTCHA
+            tarafından korunuyor. <b>Daha fazlasını öğrenin</b>.
           </small>
         </form>
       </div>
