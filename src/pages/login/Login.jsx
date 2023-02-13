@@ -3,10 +3,15 @@ import useAuthContext from "../../hooks/use-auth-context";
 import logo from "../../assets/images/logo.png";
 
 function Login() {
-  const { setIsLoggedIn } = useAuthContext();
+  const { setIsLoggedIn, email, setEmail, password, setPassword } =
+    useAuthContext();
 
   const handleSubmit = () => {
-    setIsLoggedIn(true);
+    if (email === "" || password === "") {
+      alert("Lütfen gerekli alanları doldurun.");
+    } else {
+      setIsLoggedIn(true);
+    }
   };
 
   return (
@@ -22,9 +27,17 @@ function Login() {
           <input
             className="form-input"
             type="email"
+            value={email.value}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder="E-posta veya telefon numarası"
           />
-          <input className="form-input" type="password" placeholder="Parola" />
+          <input
+            className="form-input"
+            type="password"
+            value={password.value}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Parola"
+          />
           <button>Oturum Aç</button>
           <div className="help">
             <div className="check">
