@@ -18,7 +18,7 @@ function MovieDetail({
 }) {
   return (
     <div className="movie_box">
-      <img src={smallPoster} alt={title} key={index} />
+      <img src={smallPoster} alt={title} />
       <div className="movie_info">
         <div className="icons">
           <PlayArrowIcon className="icon" />

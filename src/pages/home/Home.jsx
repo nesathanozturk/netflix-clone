@@ -9,12 +9,11 @@ function Home() {
       <Navbar />
       <FeaturedMovie />
       <Movies title="İzlemeye Devam Et" />
-      <Movies title="Favoriler" />
+      <Movies title="Suç Temalı Diziler" />
       <Movies title="Aksiyon Dizileri" />
       <Movies title="Gerilim Filmleri" />
-      <Movies title="Komedi Filmleri" />
+      <Movies title="Macera Filmleri" />
       <Movies title="En Çok İzlenenler" />
-      <Movies title="Belgeseller" />
     </div>
   );
 }
