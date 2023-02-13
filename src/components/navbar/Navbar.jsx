@@ -11,7 +11,7 @@ function Navbar() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 10) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -50,8 +50,8 @@ function Navbar() {
           <div className="profile_box">
             <ArrowDropDownIcon className="icon" />
             <div className="options">
-              <span>Ayarlar</span>
-              <span>Çıkış Yap</span>
+              <span>Hesap</span>
+              <span>Profil</span>
             </div>
           </div>
         </div>

@@ -40,8 +40,6 @@ function Movies({ title }) {
           <div key={movie.id} className="container" ref={listRef}>
             <MovieDetail
               title={movie.title}
-              titlePoster={movie.titlePoster}
-              bigPoster={movie.bigPoster}
               smallPoster={movie.smallPoster}
               description={movie.description}
               minute={movie.minute}

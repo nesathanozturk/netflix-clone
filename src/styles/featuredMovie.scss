@@ -30,10 +30,11 @@
     color: $white;
 
     img {
-      width: 400px;
+      width: 600px;
     }
 
     .description {
+      font-size: 1.2vw;
       margin: 20px 0px;
     }
 
@@ -45,7 +46,7 @@
         justify-content: center;
         align-items: center;
         margin-right: 10px;
-        padding: 10px 20px;
+        padding: 1rem 2rem 0.8rem 2.4rem;
         border: none;
         border-radius: 5px;
         font-size: 18px;
@@ -55,7 +56,6 @@
         &.playBtn {
           background-color: $play-btn-bg;
           color: $black;
-          transition: background-color 0.1s ease-in-out;
 
           &:hover {
             background-color: $play-btn-hover-bg;
@@ -65,15 +65,19 @@
         &.moreBtn {
           background-color: $more-btn-bg;
           color: $white;
-          transition: background-color 0.1s ease-in-out;
 
           &:hover {
             background-color: $more-btn-hover-bg;
           }
         }
 
+        .icon {
+          font-size: 2rem;
+        }
+
         span {
-          margin-left: 5px;
+          font-size: 1.6rem;
+          margin-left: 10px;
         }
       }
     }
