@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import "../../styles/navbar.scss";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/images/logo.png";
+import profilePicture from "../../assets//images/profile-picture.webp";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import profilePicture from "../../assets/profile-picture.webp";
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);

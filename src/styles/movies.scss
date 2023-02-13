@@ -13,6 +13,7 @@ section {
 
   .wrapper {
     position: relative;
+    display: flex;
 
     .sliderArrow {
       background-color: $slider-bg;

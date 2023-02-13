@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { movies } from "../../assets/data/data";
 import CategoryTitle from "../CategoryTitle/CategoryTitle";
 import "../../styles/movies.scss";
 import MovieDetail from "../MovieDetail/MovieDetail";
@@ -30,33 +31,30 @@ function Movies({ title }) {
     <section>
       <CategoryTitle title={title} />
       <div className="wrapper">
-        <ArrowBackIosOutlinedIcon
+        {/* <ArrowBackIosOutlinedIcon
           className="sliderArrow left"
           onClick={() => handleClick("left")}
           style={{ display: !isMoved && "none" }}
-        />
-        <div className="container" ref={listRef}>
-          <MovieDetail index={0} />
-          <MovieDetail index={1} />
-          <MovieDetail index={2} />
-          <MovieDetail index={3} />
-          <MovieDetail index={4} />
-          <MovieDetail index={5} />
-          <MovieDetail index={6} />
-          <MovieDetail index={7} />
-          <MovieDetail index={8} />
-          <MovieDetail index={9} />
-          <MovieDetail index={10} />
-          <MovieDetail index={11} />
-          <MovieDetail index={12} />
-          <MovieDetail index={13} />
-          <MovieDetail index={14} />
-          <MovieDetail index={15} />
-        </div>
-        <ArrowForwardIosOutlinedIcon
+        /> */}
+        {movies.map((movie, id) => (
+          <div key={movie.id} className="container" ref={listRef}>
+            <MovieDetail
+              title={movie.title}
+              titlePoster={movie.titlePoster}
+              bigPoster={movie.bigPoster}
+              smallPoster={movie.smallPoster}
+              description={movie.description}
+              minute={movie.minute}
+              limit={movie.limit}
+              year={movie.year}
+              genre={movie.genre}
+            />
+          </div>
+        ))}
+        {/* <ArrowForwardIosOutlinedIcon
           className="sliderArrow right"
           onClick={() => handleClick("right")}
-        />
+        /> */}
       </div>
     </section>
   );

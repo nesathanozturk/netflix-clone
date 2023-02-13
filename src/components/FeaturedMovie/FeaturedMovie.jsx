@@ -1,4 +1,5 @@
 import "../../styles/featuredMovie.scss";
+import { movies } from "../../assets/data/data";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
