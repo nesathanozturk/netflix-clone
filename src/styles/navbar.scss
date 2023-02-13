@@ -71,16 +71,33 @@ header {
           background-color: $bg-color;
           display: none;
           border-radius: 5px;
+          opacity: 0.9;
+          padding: 10px;
+          text-align: center;
+        }
+
+        .menu-icon {
+          margin-right: 10px;
         }
 
         span {
-          padding: 10px;
+          font-size: 13px;
+          display: flex;
+          justify-content: flex-start;
+          padding: 15px 10px;
           cursor: pointer;
+
+          &:nth-last-child(1) {
+            border-top: 1px solid $gray;
+            opacity: 0.9;
+          }
         }
 
         &:hover {
           .options {
             position: absolute;
+            top: 55px;
+            right: 30px;
             display: flex;
             flex-direction: column;
           }

@@ -5,6 +5,11 @@ import profilePicture from "../../assets//images/profile-picture.webp";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import EditIcon from "@mui/icons-material/Edit";
+import ExitToAppIcon from "@mui/icons-material/ExitToApp";
+import InsertEmoticonIcon from "@mui/icons-material/InsertEmoticon";
+import PermIdentityIcon from "@mui/icons-material/PermIdentity";
+import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -50,8 +55,27 @@ function Navbar() {
           <div className="profile_box">
             <ArrowDropDownIcon className="icon" />
             <div className="options">
-              <span>Hesap</span>
-              <span>Profil</span>
+              <span>
+                <EditIcon className="menu-icon" />
+                Profil Yönetimi
+              </span>
+              <span>
+                <ExitToAppIcon className="menu-icon" />
+                Profilden Çık
+              </span>
+              <span>
+                <InsertEmoticonIcon className="menu-icon" />
+                Profili Aktar
+              </span>
+              <span>
+                <PermIdentityIcon className="menu-icon" />
+                Hesap
+              </span>
+              <span>
+                <HelpOutlineIcon className="menu-icon" />
+                Yardım Merkezi
+              </span>
+              <span>Netflix oturumunu kapat</span>
             </div>
           </div>
         </div>
