@@ -3,12 +3,7 @@ import { movies } from "../../assets/data/data";
 import "../../styles/banner.scss";
 import trailer from "../../assets/peaky-blinders-trailer.mp4";
 
-const handlePlay = () => {
-  const video = document.getElementById("video");
-  video.play();
-};
-
-const handlePause = () => {
+const handlePlayPause = () => {
   const video = document.getElementById("video");
 
   if (video.paused) {
@@ -27,9 +22,9 @@ function Banner() {
         poster={movies[0].bigPoster}
         src={trailer}
         type="video/mp4"
-        onClick={handlePause}
+        onClick={handlePlayPause}
       ></video>
-      <BannerDetail movies={movies} handlePlay={handlePlay} />
+      <BannerDetail movies={movies} />
     </div>
   );
 }
