@@ -81,28 +81,26 @@ function Category({ title }) {
   };
 
   return (
-    <main>
-      <section>
-        <CategoryTitle title={title} />
-        <div className="wrapper">
-          <Slider {...settings}>
-            {movies.map((movie, id) => (
-              <div key={movie.id} className="container">
-                <Movie
-                  title={movie.title}
-                  smallPoster={movie.smallPoster}
-                  description={movie.description}
-                  minute={movie.minute}
-                  limit={movie.limit}
-                  year={movie.year}
-                  genre={movie.genre}
-                />
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </section>
-    </main>
+    <section>
+      <CategoryTitle title={title} />
+      <div className="category">
+        <Slider {...settings}>
+          {movies.map((movie, id) => (
+            <div key={movie.id} className="movie_container">
+              <Movie
+                title={movie.title}
+                smallPoster={movie.smallPoster}
+                description={movie.description}
+                minute={movie.minute}
+                limit={movie.limit}
+                year={movie.year}
+                genre={movie.genre}
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </section>
   );
 }
 
