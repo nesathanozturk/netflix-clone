@@ -5,11 +5,14 @@ import trailer from "../../assets/peaky-blinders-trailer.mp4";
 
 const handlePlayPause = () => {
   const video = document.getElementById("video");
+  const serieBanner = document.getElementById("movie_info");
 
   if (video.paused) {
     video.play();
+    serieBanner.style.opacity = "0.2";
   } else {
     video.pause();
+    serieBanner.style.opacity = "1";
   }
 };
 
@@ -23,6 +26,7 @@ function Banner() {
         src={trailer}
         type="video/mp4"
         onClick={handlePlayPause}
+        loop
       ></video>
       <BannerDetail movies={movies} />
     </div>

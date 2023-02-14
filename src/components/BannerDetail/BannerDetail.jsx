@@ -4,7 +4,7 @@ import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
 function BannerDetail({ movies }) {
   return (
-    <div className="movie_info">
+    <div id="movie_info" className="movie_info">
       <img src={movies[0].titlePoster} alt={movies[0].title} />
       <span className="description">{movies[0].description}</span>
       <div className="buttons">

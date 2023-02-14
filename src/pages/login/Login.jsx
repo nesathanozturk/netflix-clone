@@ -6,13 +6,8 @@ function Login() {
   const { setIsLoggedIn, username, setUsername, password, setPassword } =
     useAuthContext();
 
-  const handleSubmit = (e) => {
-    if (username === "" || password === "") {
-      alert("Lütfen gerekli alanları doldurun.");
-      e.preventDefault();
-    } else {
-      setIsLoggedIn(true);
-    }
+  const handleSubmit = () => {
+    setIsLoggedIn(true);
   };
 
   return (
@@ -31,6 +26,7 @@ function Login() {
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             placeholder="Kullanıcı Adı"
+            required
           />
           <input
             className="form-input"
@@ -38,6 +34,7 @@ function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Parola"
+            required
           />
           <button>Oturum Aç</button>
           <div className="help">
