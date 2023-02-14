@@ -29,7 +29,7 @@ function Navbar() {
 
   return (
     <header className={`navbar ${isScrolled && "scrolled"}`}>
-      <navbar>
+      <div className="navbar">
         <div className="left">
           <img src={logo} alt="Netflix Logo" />
           <ul>
@@ -85,7 +85,7 @@ function Navbar() {
             </div>
           </div>
         </div>
-      </navbar>
+      </div>
     </header>
   );
 }

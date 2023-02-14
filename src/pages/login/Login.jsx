@@ -12,11 +12,11 @@ function Login() {
 
   return (
     <div className="login">
-      <navbar>
+      <div className="login_navbar">
         <div className="wrapper">
           <img className="logo" src={logo} alt="Netflix Logo" />
         </div>
-      </navbar>
+      </div>
       <div className="container">
         <form onSubmit={handleSubmit}>
           <h1>Oturum Aç</h1>
