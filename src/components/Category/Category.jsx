@@ -1,7 +1,7 @@
 import { movies } from "../../assets/data/data";
 import CategoryTitle from "../CategoryTitle/CategoryTitle";
-import "../../styles/movies.scss";
-import MovieDetail from "../MovieDetail/MovieDetail";
+import "../../styles/category.scss";
+import Movie from "../Movie/Movie";
 import ArrowBackIosOutlinedIcon from "@mui/icons-material/ArrowBackIosOutlined";
 import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 import Slider from "react-slick";
@@ -29,7 +29,7 @@ const SamplePrevArrow = (props) => {
   );
 };
 
-function Movies({ title }) {
+function Category({ title }) {
   var settings = {
     dots: false,
     infinite: true,
@@ -88,7 +88,7 @@ function Movies({ title }) {
           <Slider {...settings}>
             {movies.map((movie, id) => (
               <div key={movie.id} className="container">
-                <MovieDetail
+                <Movie
                   title={movie.title}
                   smallPoster={movie.smallPoster}
                   description={movie.description}
@@ -106,4 +106,4 @@ function Movies({ title }) {
   );
 }
 
-export default Movies;
+export default Category;

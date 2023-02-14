@@ -1,10 +1,10 @@
-import "../../styles/movieDetail.scss";
+import "../../styles/movie.scss";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import AddIcon from "@mui/icons-material/Add";
 import ThumbUpOffAltIcon from "@mui/icons-material/ThumbUpOffAlt";
 import ThumbDownOffAltIcon from "@mui/icons-material/ThumbDownOffAlt";
 
-function MovieDetail({
+function Movie({
   index,
   title,
   titlePoster,
@@ -38,4 +38,4 @@ function MovieDetail({
   );
 }
 
-export default MovieDetail;
+export default Movie;

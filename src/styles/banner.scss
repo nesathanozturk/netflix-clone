@@ -1,17 +1,17 @@
 @import "./variables";
 
-.featured_movie {
+.banner {
   height: 95vh;
   position: relative;
 
   &::after {
+    background: linear-gradient(to top, #111, transparent);
     content: "";
+    width: 100%;
+    height: 100px;
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top, #111, transparent);
   }
 
   img {
@@ -35,8 +35,8 @@
     }
 
     .description {
-      font-size: 1.3vw;
       margin: 20px 0px;
+      font-size: 1.3vw;
     }
 
     .buttons {
@@ -52,8 +52,8 @@
         font-size: 12px;
         font-weight: 650;
         border: none;
-        outline: none;
         border-radius: 0.2vw;
+        outline: none;
         cursor: pointer;
 
         &.playBtn {
@@ -66,9 +66,9 @@
         }
 
         &.moreBtn {
-          opacity: 0.9;
           background-color: $more-btn-bg;
           color: $white;
+          opacity: 0.9;
 
           &:hover {
             background-color: $more-btn-hover-bg;
@@ -80,8 +80,8 @@
         }
 
         span {
-          font-size: 1.6rem;
           margin-left: 10px;
+          font-size: 1.6rem;
         }
       }
     }

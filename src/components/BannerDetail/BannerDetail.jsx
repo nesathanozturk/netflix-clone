@@ -1,8 +1,8 @@
-import "../../styles/featuredMovie.scss";
+import "../../styles/banner.scss";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
-function FeaturedMovieDetail({ movies }) {
+function BannerDetail({ movies }) {
   return (
     <div className="movie_info">
       <img src={movies[0].titlePoster} alt={movies[0].title} />
@@ -19,4 +19,4 @@ function FeaturedMovieDetail({ movies }) {
   );
 }
 
-export default FeaturedMovieDetail;
+export default BannerDetail;
