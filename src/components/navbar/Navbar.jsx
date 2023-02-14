@@ -34,7 +34,7 @@ function Navbar() {
           <img src={logo} alt="Netflix Logo" />
           <ul>
             <li>
-              <a href="#">Ana Sayfa</a>
+              <a href="/home">Ana Sayfa</a>
             </li>
             <li>
               <a href="#">Diziler</a>
@@ -43,10 +43,13 @@ function Navbar() {
               <a href="#">Filmler</a>
             </li>
             <li>
-              <a href="#">Yeni Çıkanlar</a>
+              <a href="#">Yeni ve Popüler</a>
             </li>
             <li>
               <a href="#">Listem</a>
+            </li>
+            <li>
+              <a href="#">Dile Göre Göz At</a>
             </li>
           </ul>
         </div>
