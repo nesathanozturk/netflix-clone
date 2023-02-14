@@ -6,9 +6,10 @@ function Login() {
   const { setIsLoggedIn, username, setUsername, password, setPassword } =
     useAuthContext();
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     if (username === "" || password === "") {
       alert("Lütfen gerekli alanları doldurun.");
+      e.preventDefault();
     } else {
       setIsLoggedIn(true);
     }
