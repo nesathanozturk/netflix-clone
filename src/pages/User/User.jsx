@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import { Link } from "react-router-dom";
 import "../../styles/user.scss";
 import profilePicture from "../../assets/images/profile-picture.webp";
+import "animate.css";
 
 function User() {
   const { username } = useAuthContext();
@@ -12,7 +13,7 @@ function User() {
   return (
     <>
       {homeScreen === false ? (
-        <div className="container">
+        <div className="container animate__animated animate__fadeIn">
           <div className="wrapper">
             <div className="user">
               <h1>Kim izliyor?</h1>
