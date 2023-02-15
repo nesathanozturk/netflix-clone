@@ -1,12 +1,12 @@
 import useAuthContext from "../../hooks/use-auth-context";
-import Login from "../Login/Login";
+import Login from "../Home/Home";
 import User from "../User/User";
 import "../../styles/_reset.scss";
 
 function Main() {
   const { isLoggedIn } = useAuthContext();
 
-  return <>{isLoggedIn ? <User /> : <Login />}</>;
+  return <>{isLoggedIn ? <User /> : <Home />}</>;
 }
 
 export default Main;
