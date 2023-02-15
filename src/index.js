@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import AuthPage from "./pages/AuthPage/Auth";
+import AuthPage from "./pages/Auth/Auth";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "./context/auth-context";
 

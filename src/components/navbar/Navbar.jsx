@@ -34,22 +34,22 @@ function Navbar() {
           <img src={logo} alt="Netflix Logo" />
           <ul>
             <li>
-              <a href="/home">Ana Sayfa</a>
+              <a href="/anasayfa">Ana Sayfa</a>
             </li>
             <li>
-              <a href="#">Diziler</a>
+              <a href="/diziler">Diziler</a>
             </li>
             <li>
-              <a href="#">Filmler</a>
+              <a href="/filmler">Filmler</a>
             </li>
             <li>
-              <a href="#">Yeni ve Popüler</a>
+              <a href="/yenivepopuler">Yeni ve Popüler</a>
             </li>
             <li>
-              <a href="#">Listem</a>
+              <a href="/listem">Listem</a>
             </li>
             <li>
-              <a href="#">Dile Göre Göz At</a>
+              <a href="/dil">Dile Göre Göz At</a>
             </li>
           </ul>
         </div>

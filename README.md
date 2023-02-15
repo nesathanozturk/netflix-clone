@@ -8,7 +8,6 @@
 - React JS
 - SASS for styles
 - Icons for Material UI
-- Animate for Animatecss
 
 ## Quick Start
 
