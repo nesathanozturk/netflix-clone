@@ -1,5 +1,5 @@
 import useAuthContext from "../../hooks/use-auth-context";
-import Login from "../Home/Home";
+import Home from "../Home/Home";
 import User from "../User/User";
 import "../../styles/_reset.scss";
 
