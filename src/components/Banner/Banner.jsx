@@ -1,5 +1,5 @@
 import BannerDetail from "../BannerDetail/BannerDetail";
-import { movies } from "../../assets/data/data";
+import { movies } from "../../data/data";
 import "../../sass/layout/_banner.scss";
 import trailer from "../../assets/peaky-blinders-trailer.mp4";
 

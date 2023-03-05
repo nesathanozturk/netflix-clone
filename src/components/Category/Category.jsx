@@ -1,4 +1,4 @@
-import { movies } from "../../assets/data/data";
+import { movies } from "../../data/data";
 import CategoryTitle from "../CategoryTitle/CategoryTitle";
 import "../../sass/layout/_category.scss";
 import Movie from "../Movie/Movie";
