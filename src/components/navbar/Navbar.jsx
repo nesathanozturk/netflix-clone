@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import useAuthContext from "../../hooks/use-auth-context";
-import "../../styles/navbar.scss";
+import "../../sass/layout/_navbar.scss";
 import logo from "../../assets/images/logo.png";
 import profilePicture from "../../assets//images/profile-picture.webp";
 import SearchIcon from "@mui/icons-material/Search";

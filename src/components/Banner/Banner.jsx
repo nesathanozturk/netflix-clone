@@ -1,6 +1,6 @@
 import BannerDetail from "../BannerDetail/BannerDetail";
 import { movies } from "../../assets/data/data";
-import "../../styles/banner.scss";
+import "../../sass/layout/_banner.scss";
 import trailer from "../../assets/peaky-blinders-trailer.mp4";
 
 const handlePlayPause = () => {

@@ -1,4 +1,4 @@
-import "../../styles/movie.scss";
+import "../../sass/components/_movie.scss";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import CheckIcon from "@mui/icons-material/Check";
 import ThumbUpOffAltIcon from "@mui/icons-material/ThumbUpOffAlt";

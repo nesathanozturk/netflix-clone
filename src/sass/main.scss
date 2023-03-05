@@ -1,0 +1,13 @@
+@import "abstracts/variables";
+
+@import "base/reset";
+
+@import "layout/navbar";
+@import "layout/banner";
+@import "layout/category";
+
+@import "components/movie";
+
+@import "pages/home";
+@import "pages/login";
+@import "pages/user";

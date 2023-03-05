@@ -3,8 +3,6 @@
 <p>This repository is my React Netflix project.<p>
 <p>Normally i was going to make the project with API. But i created the data because i added the trailer by myself.<p>
 
-<video src="./src/assets/netflix.mp4"></video>
-
 ## 🧰 Technologies Used
 
 - React JS

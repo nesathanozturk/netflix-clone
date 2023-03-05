@@ -1,6 +1,6 @@
 import { movies } from "../../assets/data/data";
 import CategoryTitle from "../CategoryTitle/CategoryTitle";
-import "../../styles/category.scss";
+import "../../sass/layout/_category.scss";
 import Movie from "../Movie/Movie";
 import ArrowBackIosOutlinedIcon from "@mui/icons-material/ArrowBackIosOutlined";
 import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";

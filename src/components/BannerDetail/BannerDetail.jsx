@@ -1,4 +1,4 @@
-import "../../styles/banner.scss";
+import "../../sass/layout/_banner.scss";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 

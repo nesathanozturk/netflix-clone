@@ -1,4 +1,4 @@
-import "../../styles/login.scss";
+import "../../sass/pages/_login.scss";
 import useAuthContext from "../../hooks/use-auth-context";
 import logo from "../../assets/images/logo.png";
 

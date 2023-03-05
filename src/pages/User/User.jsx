@@ -2,7 +2,7 @@ import { useState } from "react";
 import useAuthContext from "../../hooks/use-auth-context";
 import Home from "../Home/Home";
 import { Link } from "react-router-dom";
-import "../../styles/user.scss";
+import "../../sass/pages/_user.scss";
 import profilePicture from "../../assets/images/profile-picture.webp";
 import "animate.css";
 
