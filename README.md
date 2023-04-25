@@ -6,6 +6,7 @@
 ## 🧰 Technologies Used
 
 - React JS
+- React Router
 - Context API
 - SASS for styles
 - Icons for Material UI
