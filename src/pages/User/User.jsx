@@ -1,6 +1,6 @@
 import { useState } from "react";
 import useAuthContext from "../../hooks/use-auth-context";
-import Home from "../Home/Home";
+import Home from "../home/Home";
 import { Link } from "react-router-dom";
 import "../../sass/pages/_user.scss";
 import profilePicture from "../../assets/images/profile-picture.webp";
