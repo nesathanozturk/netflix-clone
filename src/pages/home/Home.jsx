@@ -1,5 +1,5 @@
 import "../../sass/pages/_home.scss";
-import Navbar from "../../components/Navbar/Navbar";
+import Navbar from "../../components/navbar/Navbar";
 import Banner from "../../components/Banner/Banner";
 import Category from "../../components/Category/Category";
 
