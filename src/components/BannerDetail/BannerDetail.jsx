@@ -1,6 +1,6 @@
-import "../../sass/layout/_banner.scss";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import "../../sass/layout/_banner.scss";
 
 function BannerDetail({ movies }) {
   return (

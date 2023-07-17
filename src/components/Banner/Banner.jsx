@@ -1,22 +1,26 @@
+import { useEffect } from "react";
 import BannerDetail from "../BannerDetail/BannerDetail";
-import { movies } from "../../data/data";
-import "../../sass/layout/_banner.scss";
+import { movies } from "../../data";
 import trailer from "../../assets/peaky-blinders-trailer.mp4";
-
-const handlePlayPause = () => {
-  const video = document.getElementById("video");
-  const serieBanner = document.getElementById("movie_info");
-
-  if (video.paused) {
-    video.play();
-    serieBanner.style.opacity = "0.2";
-  } else {
-    video.pause();
-    serieBanner.style.opacity = "1";
-  }
-};
+import "../../sass/layout/_banner.scss";
 
 function Banner() {
+  useEffect(() => {
+    const handlePlayPause = () => {
+      const video = document.getElementById("video");
+      const serieBanner = document.getElementById("movie_info");
+
+      if (video.paused) {
+        video.play();
+        serieBanner.style.opacity = "0.2";
+      } else {
+        video.pause();
+        serieBanner.style.opacity = "1";
+      }
+    };
+    handlePlayPause();
+  }, []);
+
   return (
     <div className="banner">
       <video

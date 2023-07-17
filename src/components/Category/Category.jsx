@@ -1,33 +1,12 @@
-import { movies } from "../../data/data";
-import CategoryTitle from "../CategoryTitle/CategoryTitle";
-import "../../sass/layout/_category.scss";
-import Movie from "../Movie/Movie";
-import ArrowBackIosOutlinedIcon from "@mui/icons-material/ArrowBackIosOutlined";
-import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-const SampleNextArrow = (props) => {
-  const { onClick } = props;
-  return (
-    <div className="control-btn" onClick={onClick}>
-      <button className="next">
-        <ArrowForwardIosOutlinedIcon />
-      </button>
-    </div>
-  );
-};
-const SamplePrevArrow = (props) => {
-  const { onClick } = props;
-  return (
-    <div className="control-btn" onClick={onClick}>
-      <button className="prev">
-        <ArrowBackIosOutlinedIcon />
-      </button>
-    </div>
-  );
-};
+import CategoryTitle from "../CategoryTitle/CategoryTitle";
+import SampleNextArrow from "../buttons/SampleNextArrow";
+import SamplePrevArrow from "../buttons/SamplePrevArrow";
+import Movie from "../Movie/Movie";
+import { movies } from "../../data/";
+import "../../sass/layout/_category.scss";
 
 function Category({ title }) {
   var settings = {

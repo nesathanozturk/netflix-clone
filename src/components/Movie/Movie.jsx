@@ -1,9 +1,9 @@
-import "../../sass/components/_movie.scss";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import CheckIcon from "@mui/icons-material/Check";
 import ThumbUpOffAltIcon from "@mui/icons-material/ThumbUpOffAlt";
 import ThumbDownOffAltIcon from "@mui/icons-material/ThumbDownOffAlt";
 import ThumbsUpDownIcon from "@mui/icons-material/ThumbsUpDown";
+import "../../sass/components/_movie.scss";
 
 function Movie({
   index,

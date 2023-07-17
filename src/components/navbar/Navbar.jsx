@@ -1,16 +1,16 @@
 import { useState, useEffect } from "react";
-import useAuthContext from "../../hooks/use-auth-context";
-import "../../sass/layout/_navbar.scss";
-import logo from "../../assets/images/logo.png";
-import profilePicture from "../../assets//images/profile-picture.webp";
-import SearchIcon from "@mui/icons-material/Search";
-import NotificationsIcon from "@mui/icons-material/Notifications";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import EditIcon from "@mui/icons-material/Edit";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
-import InsertEmoticonIcon from "@mui/icons-material/InsertEmoticon";
-import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
+import NotificationsIcon from "@mui/icons-material/Notifications";
+import SearchIcon from "@mui/icons-material/Search";
+import PermIdentityIcon from "@mui/icons-material/PermIdentity";
+import useAuthContext from "../../hooks/use-auth-context";
+import InsertEmoticonIcon from "@mui/icons-material/InsertEmoticon";
+import logo from "../../assets/images/logo.png";
+import profilePicture from "../../assets//images/profile-picture.webp";
+import "../../sass/layout/_navbar.scss";
 
 function Navbar() {
   const { username } = useAuthContext();
@@ -57,7 +57,7 @@ function Navbar() {
           <SearchIcon className="icon" />
           <span>{username}</span>
           <NotificationsIcon className="icon" />
-          <img src={profilePicture} alt="Profile" />
+          <img src={profilePicture} alt="Kullanıcı profil fotoğrafı" />
           <div className="profile_box">
             <ArrowDropDownIcon className="icon" />
             <div className="options">
