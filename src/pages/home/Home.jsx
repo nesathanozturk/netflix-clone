@@ -1,7 +1,7 @@
-import "../../sass/pages/_home.scss";
-import Navbar from "../../components/navbar/Navbar";
 import Banner from "../../components/Banner/Banner";
 import Category from "../../components/Category/Category";
+import Navbar from "../../components/navbar/Navbar";
+import "../../sass/pages/_home.scss";
 
 function Home() {
   return (

@@ -1,6 +1,6 @@
 import "../../sass/pages/_login.scss";
 import useAuthContext from "../../hooks/use-auth-context";
-import logo from "../../assets/images/logo.png";
+import netflixLogo from "../../assets/images/logo.png";
 
 function Login() {
   const { setIsLoggedIn, username, setUsername, password, setPassword } =
@@ -14,7 +14,7 @@ function Login() {
     <div className="login">
       <div className="login_navbar">
         <div className="wrapper">
-          <img className="logo" src={logo} alt="Netflix Logo" />
+          <img className="logo" src={netflixLogo} alt="Netflix Logo" />
         </div>
       </div>
       <div className="container">
