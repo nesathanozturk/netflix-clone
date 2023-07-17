@@ -1,9 +1,9 @@
-import { useState } from "react";
-import useAuthContext from "../../hooks/use-auth-context";
-import Home from "../home/Home";
 import { Link } from "react-router-dom";
-import "../../sass/pages/_user.scss";
+import { useState } from "react";
+import Home from "../home/Home";
+import useAuthContext from "../../hooks/use-auth-context";
 import profilePicture from "../../assets/images/profile-picture.webp";
+import "../../sass/pages/_user.scss";
 import "animate.css";
 
 function User() {
