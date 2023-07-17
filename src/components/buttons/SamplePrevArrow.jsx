@@ -1,6 +1,6 @@
 import ArrowBackIosOutlinedIcon from "@mui/icons-material/ArrowBackIosOutlined";
 
-export const SamplePrevArrow = (props) => {
+const SamplePrevArrow = (props) => {
   const { onClick } = props;
   return (
     <div className="control-btn" onClick={onClick}>
@@ -10,3 +10,5 @@ export const SamplePrevArrow = (props) => {
     </div>
   );
 };
+
+export default SamplePrevArrow;
